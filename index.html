@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndabezitha Software Solutions</title>
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            background-color: #001f3f;
+            /* Navy */
+            color: #ffffff;
+            /* White */
+            font-family: 'inter';
+            /* Optional: Set a font-family */
+        }
+
+        .navbar {
+            background-color: #001f3f;
+            /* Navy */
+        }
+
+        .nav-link {
+            color: #ffffff;
+            /* White */
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+            /* Blue */
+        }
+
+        .text-brand {
+            color: #007bff;
+            /* Blue */
+        }
+
+        .btn-brand {
+            background-color: #007bff;
+            /* Blue */
+            color: #ffffff;
+            /* White */
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-brand:hover {
+            background-color: #0056b3;
+            /* Darker Blue */
+        }
+
+        .link-custom {
+            color: #007bff;
+            /* Blue */
+        }
+
+        .welcome-container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 2rem;
+            line-height: 1.4;
+            overflow: hidden;
+            /* Hide overflow to prevent layout shift */
+            white-space: nowrap;
+            /* Prevent line breaks */
+            border-right: .15em solid white;
+            /* White */
+            animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: white;
+                /* White */
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .welcome-message {
+                font-size: 1.5rem;
+            }
+
+            .welcome-container {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .welcome-message {
+                font-size: 1.2rem;
+            }
+
+            .welcome-container {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 470px) {
+            .welcome-message {
+                font-size: 1.2rem;
+            }
+
+            .lead {
+                font-size: 15px;
+            }
+
+            .btn-brand {
+                font-size: 13px;
+            }
+
+            .welcome-container {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .welcome-message {
+                font-size: 0.9rem;
+            }
+
+            .welcome-container {
+                padding-top: 28px;
+                padding-bottom: 28px;
+            }
+        }
+
+        .footer {
+            background-color: #001f3f;
+            /* Navy */
+            padding: 40px 0;
+            text-align: center;
+            color: #ffffff;
+            /* White */
+        }
+
+        .footer a {
+            color: #007bff;
+            /* Blue */
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #0056b3;
+            /* Darker Blue */
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-center mb-lg-4" href="#">
+                <img src="assets/images/NdabeLogo.jpg" class="h3 fw-bold d-block d-lg-none"
+                    style="width: 70px; border-radius: 7px;" alt="logo">
+                <img src="assets/images/NdabeLogo.jpg" class="d-none d-lg-block rounded-circle" style="border: none;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--content wrapper-->
+    <div id="content-wrapper">
+        <section id="home" class="full-height px-lg-5">
+            <div class="container welcome-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 fw-bold welcome-message">
+                            Welcome to <br> <span class="text-brand">Ndabezitha Software Solutions PTY Ltd </span> From
+                            SA...
+                        </h1>
+                        <p class="lead">Ndabezitha Software Solutions, a Skilled and creative web developer company with
+                            passion for creating beautiful, responsive and a user-friendly websites. we've woked with a
+                            variety of projects, Ranging from personal blogs to E-commerce platforms.</p>
+                        <a href="#work" class="btn btn-brand">Explore My Work</a>
+                        <a href="#" class="link-custom">Call: (067 051 1592)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Us Section -->
+        <section id="about" class="py-5">
+            <div class="container" style="width: 50%;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="display-4 fw-bold mb-5">About Us</h2>
+                        <p class="lead">Ndabezitha Software Solutions PTY Ltd is dedicated to providing high-quality web
+                            development services. Our team consists of passionate developers who strive to deliver
+                            exceptional results for our clients.</p>
+                        <p>We specialize in:</p>
+                        <ul class="list-unstyled">
+                            <li>Custom website development</li>
+                            <li>Mobile app development</li>
+                            <li>E-commerce solutions</li>
+                            <li>SEO and digital marketing services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Services Section -->
+        <section id="services" class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="display-4 fw-bold mb-5">Our Services</h2>
+                        <p class="lead">Explore the range of services we offer:</p>
+                        <!-- Add your service details here -->
+                        <ul class="list-unstyled">
+                            <li> <span> Web Development</span> : refers to the process of creating and maintaining
+                                websites. It
+                                involves several different aspects, including web design, web content development,
+                                client-side/server-side scripting, and network security configuration. Web development
+                                can be divided into two main categories:
+
+                                Front-end Development: This focuses on the visual aspects of a website, or the part
+                                users interact with. Technologies used in front-end development include HTML, CSS, and
+                                JavaScript.
+
+                                Back-end Development: This focuses on the server-side, managing data and ensuring that
+                                the front end functions properly.</li> <br> <br>
+
+                            <li> <span> E-commerce Solutions</span>: involve the development of websites and
+                                applications that
+                                facilitate online buying and selling of goods and services. This includes:
+
+                                Online Storefronts: Websites where products can be listed, and customers can browse,
+                                select, and purchase items.
+
+                                Shopping Carts: Systems that allow customers to collect items they wish to purchase.
+
+                                Payment Gateways: Secure online payment processing systems.
+
+                                Order Management Systems: Tools for tracking orders, managing inventory, and handling
+                                logistics.</li>
+                            <br> <br>
+                            <li> <span>SEO and Digital Marketing</span> : SEO (Search Engine Optimization) and Digital
+                                Marketing are
+                                strategies used to increase the visibility and reach of websites and online content.
+
+                                SEO: The practice of optimizing a website to rank higher in search engine results pages
+                                (SERPs). This involves keyword research, on-page optimization (like improving meta tags
+                                and content), and off-page optimization (like building backlinks).
+
+                                Digital Marketing: Encompasses a broad range of online marketing activities, including:
+
+                                Content Marketing: Creating valuable content to attract and engage an audience.
+                                Social Media Marketing: Using social media platforms to promote products and interact
+                                with customers.
+                                Email Marketing: Sending promotional emails to a targeted list of prospects.
+                                Pay-Per-Click (PPC) Advertising: Running paid ads on platforms like Google Ads and
+                                social media.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="py-5">
+            <div class="container" style="width: 50%;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="display-4 fw-bold mb-5">Our Work</h2>
+                        <!-- Add your work/portfolio items here -->
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/images/portfolio-item-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 1</h5>
+                                        <p class="card-text">Description of project 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/images/portfolio-item-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 2</h5>
+                                        <p class="card-text">Description of project 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/images/portfolio-item-3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 3</h5>
+                                        <p class="card-text">Description of project 3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="bg-dark text-white py-5">
+            <div class="container" style="width: 50%;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="display-4 fw-bold mb-5">Contact Us</h2>
+                        <p class="lead">Get in touch with us today!</p>
+                        <!-- Contact Form -->
+                        <form action="submit_form.php" method="POST" class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-brand" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ndabezitha Software Solutions PTY Ltd. All rights reserved.</p>
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><i class="lab la-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="lab la-whatsapp"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="lab la-linkedin-in"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="lab la-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
